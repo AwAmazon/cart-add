@@ -1,0 +1,12 @@
+<h1>CART Component</h1>
+<h2>
+    in this  component view all the items which are moved to your cart
+</h2>
+
+<div class="listcontainer">
+<div class="itemcard" *ngFor="let f of samitem">
+    <h2> {{f.name}} </h2>
+    <h3>Price : {{f.price}} </h3>
+    <button (click)="removeFromCart(f)">Remove from Cart</button>
+</div>
+</div>

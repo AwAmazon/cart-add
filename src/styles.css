@@ -1,0 +1,11 @@
+button {
+    background-color: rgb(164, 243, 45);
+    color: black;
+    padding: 10px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.listcontainer{
+    display: flex;flex-wrap: wrap;
+}
+/* You can add global styles to this file, and also import other style files */

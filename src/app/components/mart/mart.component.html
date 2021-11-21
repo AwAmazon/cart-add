@@ -1,0 +1,13 @@
+<h1>MART Component</h1>
+<h2>
+    in this component view all the items/products available in the mart
+</h2>
+
+<div class="listcontainer">
+    <div class="itemcard" *ngFor="let sample of sampleitem1">
+        <h2> {{sample.name}} </h2>
+        <h3>Price : {{sample.price}} </h3>
+        <button (click)="moveToCart(sample)">Move to Cart</button>
+    </div>
+</div>
+

@@ -1,0 +1,21 @@
+.container {
+    display: flex;
+    justify-content: space-around;
+}
+.container2 {
+    position: fixed;
+    bottom: 5px;
+    display: flex;
+    justify-content: space-around;
+    border: solid grey 5px;
+    padding: 8px 250px;
+    left: 0;
+    right: 0;
+    margin: 0 30%;
+    border-radius: 15px;
+}
+
+li{
+    font-weight: bold;
+    color: grey;
+}
