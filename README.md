@@ -5,7 +5,7 @@
 ## Note
 1. Clone the repository
     ```
-    git clone https://github.com/shivam101gaur/easyecom-assignment.git
+    git clone https://github.com/AwAmazon/cart-add.git
     ```
 2. Do not install any third party packages
 3. install npm packages
