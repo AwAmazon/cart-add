@@ -1,5 +1,4 @@
-# **Stimulating a MART**
-# Easyecom Assignment
+
 
 
 ## Note
