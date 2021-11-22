@@ -4,7 +4,7 @@
 </h2>
 
 <div class="listcontainer">
-    <div class="itemcard" *ngFor="let sample of sampleitem1">
+    <div class="itemcard" *ngFor="let sample of shservice.mdata">
         <h2> {{sample.name}} </h2>
         <h3>Price : {{sample.price}} </h3>
         <button (click)="moveToCart(sample)">Move to Cart</button>

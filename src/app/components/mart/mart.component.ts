@@ -32,7 +32,7 @@ export class MartComponent implements OnInit {
 
   
 
-  constructor(private http:HttpClient, private shservice: SharedService) { 
+  constructor(private http:HttpClient, public shservice: SharedService) { 
     
   }
 
@@ -44,10 +44,10 @@ export class MartComponent implements OnInit {
    {
      this.sampleitem1=data;
      
-     
+     this.displayMart();
+
    });
 
-    this.displayMart();
     
     
     
@@ -73,7 +73,9 @@ export class MartComponent implements OnInit {
    
   
 
+   console.log(this.sampleitem1);
    this.sampleitem1.forEach((value, index)=>{
+     this.shservice.mdata.push(value);
     if (value.name!=this.shservice.gData()[0].name)
     this.sampleitem1.push(this.shservice.gData()[0])
   });

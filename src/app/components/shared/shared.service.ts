@@ -31,7 +31,7 @@ export class SharedService {
   
   sData(d: Sitems){
     this.mdata.push(d);
-    this.mdata=this.mdata;
+    // this.mdata=this.mdata;
     console.log(this.mdata)
 
   }
@@ -45,11 +45,15 @@ export class SharedService {
  
 
   setData(data: Sitems){
+    this.mdata.forEach((value, index) => {
+      if (value.name == data.name) this.mdata.splice(index, 1);
+    });
     this.cdata.push(data);
-    this.cdata=this.cdata;
+    // this.cdata=this.cdata;
   }
 
   getData(){
+    console.log(this.cdata)
     return this.cdata;
     
   }
